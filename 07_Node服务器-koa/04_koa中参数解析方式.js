@@ -8,6 +8,7 @@ const app = new Koa();
 
 // 针对json方式和urlencoded方式，使用第三方中间件解析body数据
 app.use(bodyParser())
+
 // 针对formdata方式，使用第三方中间件
 // 1.方式一
 // app.use(multer())
@@ -25,19 +26,19 @@ const userRouter = new koaRouter({ prefix: '/users' })
  * 5. post:form-data
  */
 
-// 1. params
+// 1. get/params
 userRouter.get('/', (ctx, next) => {
     const id = ctx.params.id
     ctx.body = 'user lists' + id;
 });
 
-// 2.query
+// 2.get/query
 userRouter.get('/', (ctx, next) => {
     const query = ctx.query
     ctx.body = '用户的query信息' + JSON.stringify(query);
 });
 
-// 3. json
+// 3. post/json
 userRouter.post('/json', (ctx, next) => {
     // 注意：不能从ctx.body中获取数据
     console.log(ctx.request.body)
