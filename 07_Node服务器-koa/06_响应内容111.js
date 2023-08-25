@@ -13,5 +13,5 @@ app.use((ctx, next) => {
 });
 
 app.listen(8000, () => {
-    console.log('koa服务器启动成功');
+    console.log('koa服务器启动成功!');
 });
