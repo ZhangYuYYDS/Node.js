@@ -21,3 +21,31 @@ npm nodemon -g
 ```js
 npx nodemon xxx.js
 ```
+
+## git commit 提交规范
+
+使用 commitizen 来规范我们 git commit 的信息
+
+### 全局安装
+
+```js
+npm install commitizen -g
+```
+
+### 安装并初始化 cz-conventional-changelog
+
+```js
+npx commitizen init cz-conventional-changelog --save-dev --save-exact
+```
+
+### 配置 package.json 文件夹
+
+```json
+"config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+```
+
+### 执行 npx cz
