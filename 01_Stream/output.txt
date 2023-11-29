@@ -1,0 +1,5 @@
+input.txt start
+hello node.js
+hello zy
+input.txt end
+
