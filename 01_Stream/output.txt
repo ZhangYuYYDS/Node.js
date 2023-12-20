@@ -1,1 +1,5 @@
-aaaaa张雨张雨hhhh张雨hhhh
+input.txt start
+hello node.js
+hello zy
+input.txt end
+
