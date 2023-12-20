@@ -5,7 +5,7 @@ let data = 'Hello, Node.js';
 var writerStream = fs.createWriteStream('output.txt');
 
 // 使用 utf8 编码写入数据
-writerStream.write(data, 'UTF8');
+writerStream.write(data, 'utf8');
 
 // 标记文件末尾
 writerStream.end();
