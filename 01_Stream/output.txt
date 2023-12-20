@@ -1,5 +1,1 @@
-input.txt start
-hello node.js
-hello zy
-input.txt end
-
+aaaaa张雨张雨hhhh张雨hhhh
