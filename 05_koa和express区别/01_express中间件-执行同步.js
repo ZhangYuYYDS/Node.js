@@ -4,7 +4,9 @@ const app = express();
 
 const middleware1 = (req, res, next) => {
   req.message = 'aaa';
+  // 会先执行中间件2，然后都执行完成之后才会返回值结果
   next();
+  // 返回值结果
   res.end(req.message);
 };
 

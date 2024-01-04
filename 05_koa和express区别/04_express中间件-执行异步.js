@@ -6,6 +6,7 @@ const app = express();
 const middleware1 = (req, res, next) => {
   req.message = 'aaa';
   next();
+  // 返回值结果失败
   res.end(req.message);
 };
 
@@ -21,6 +22,9 @@ const middleware3 = (req, res, next) => {
   axios.get('http://123.207.32.32:9001/lyric?id=167876').then((result) => {
     req.message += result.data.lrc.lyric;
   });
+
+  // 所以只能在这里进行结果的返回
+  res.json(req.msg);
 };
 
 app.use(middleware1, middleware2, middleware3);
