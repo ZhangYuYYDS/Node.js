@@ -10,6 +10,8 @@ app.use((ctx, next) => {
   }
 });
 
+
+// 可以将这部分放到独立的文件中
 app.on('error', (err, ctx) => {
   const errCode = err;
   let message = '';
