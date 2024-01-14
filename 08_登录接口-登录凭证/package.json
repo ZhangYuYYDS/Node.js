@@ -1,0 +1,9 @@
+{
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "@koa/router": "^12.0.1",
+    "koa": "^2.15.0",
+    "koa-session": "^6.4.0"
+  }
+}

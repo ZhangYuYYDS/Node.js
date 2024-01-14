@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>客户端的网站</h2>
+
+        <script>
+            // 在浏览器中通过js设置cookie（开发中很少使用）
+            // 没有设置过期时间，所以是内存cookie，浏览器关闭时cookie自动删除
+            document.cookie = 'name=zy';
+            // 设置了过期时间，所以是在硬盘中，只有等待过期时间到达时才会消失
+            document.cookie = 'age=20;max-age=30';
+        </script>
+    </body>
+</html>
